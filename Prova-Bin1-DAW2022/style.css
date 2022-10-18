@@ -1,0 +1,92 @@
+section .first {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section .second {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container1 .text2 {
+    width: 25%;
+    text-align: center;
+}
+
+.container1 .text1 {
+    width: 50%;
+    text-align: right;
+}
+
+.container1 .text3 {
+    width: 25%;
+    text-align: right;
+}
+
+.container2 .text4 {
+    width: 25%;
+}
+
+.container2 .text5 {
+    width: 25%;
+}
+
+section .text1 {
+    text-align: left;
+    color: #4285f4;
+}
+
+section .text2 {
+    text-align: center;
+    color: #0F9D58;
+}
+
+section .text3 {
+    text-align: right;
+    color: #DB4437;
+}
+
+section .text4 {
+    text-align: left;
+    color: #903EEB;
+}
+
+section .text5 {
+    text-align: right;
+    color: #F4B400;
+}
+
+section p {
+    padding: 8px;
+    border: 1px #4285F4;
+}
+
+section p {
+    padding: 8px;
+    border: 1px #0F9D58;
+}
+
+section p {
+    padding: 8px;
+    border: 1px #DB4437;
+}
+
+section p {
+    padding: 8px;
+    border: 1px #903EEB;
+}
+
+section p {
+    padding: 8px;
+    border: 1px #F4B400;
+}
