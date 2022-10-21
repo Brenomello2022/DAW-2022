@@ -10,7 +10,7 @@ export function Header() {
 
                 <div className="brand">
 
-                    <img src="./assets/img/logo_imobiliaria.svg" alt="Logomarca" />
+                    <img src={ imgLogo } alt="Logomarca" />
 
                     <h6>Imobiliária Unimater</h6>
 

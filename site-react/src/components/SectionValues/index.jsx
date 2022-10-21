@@ -10,7 +10,7 @@ export function SectionValues() {
 
             <div className="values-container">
 
-                <img src="./assets/img/place-company.png" alt="Foto da Firma" />
+                <img src={ imgLogo } alt="Foto da Firma" />
 
                 <div className="values-content">
 
