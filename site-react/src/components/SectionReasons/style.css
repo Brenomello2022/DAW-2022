@@ -1,0 +1,29 @@
+#reason {
+    margin-top: 0;
+}
+
+#reason .reasons-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+#reason .reasons-content .reason{
+    width: 100%;
+    border-left: 2px solid #0889d4;
+}
+
+#reason .reason p {
+    text-align: center;
+}
+
+#reason .reason:first-of-type {
+    border-left: none;
+}
+
+#reason .reason .reason-label {
+    font-size: 24px;
+    font-weight: 300;
+    color: #8f90a6;
+}

@@ -88,11 +88,11 @@ footer .footer-social .twitter {
 }
 
 footer .footer-social .instagram {
-    background-image: url('../..assets/img/icon-instagram.svg');
+    background-image: url('../../assets/img/icon-instagram.svg');
 }
 
 footer .footer-social .linkedin {
-    background-image: url('../../assetsimg/icon-linkedin.svg');
+    background-image: url('../../assets/img/icon-linkedin.svg');
 }
 
 footer .footer-copright {
