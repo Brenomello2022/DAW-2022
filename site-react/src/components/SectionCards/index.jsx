@@ -1,6 +1,7 @@
 import './style.css';
 
 export function SectionCards() {
+
     return (
         <section id="cards">
 
@@ -8,149 +9,41 @@ export function SectionCards() {
 
             <div className="cards-content">
 
-                <div className="card">
+            {imoveis.map((item, index) => (
 
-                    <img src="./assets/img/thumb1.png" alt="Casa 1" />
+                    <div key={index} className="card">
 
-                    <div className="card-content">
+                        <img src={item.foto} alt="Casa 1" />
 
-                        <h4>Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.</h4>
+                        <div className="card-content">
 
-                        <p>Perferendis enim animi molestias vero quas
-                        vel sed incidunt quisquam labore expedita?
-                        Modi a harum deleniti cumque quisquam ipsa est facilis autem!
-                        </p>
+                            <h4>{ item.titulo }</h4>
+                            
+                            <p>{ item.descricao }</p>
 
-                        <div className="card-price">
+                            <div className="card-price">
 
-                            <p>R$ 900.000,00</p>
+                                <p>
 
-                        </div>
+                                    <IntlProvider locale="pt-BR">
 
-                    </div>
+                                        <FormattedNumber value={item.preco} 
 
-                </div>
+                                            style="currency"
 
-                <div className="card">
+                                            currency="BRL" />
 
-                    <img src="./assets/img/thumb2.png" alt="Casa 2" />
+                                    </IntlProvider>
 
-                    <div className="card-content">
+                                </p>
 
-                        <h4>Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.</h4>
-
-                        <p>Perferendis enim animi molestias vero quas
-                        vel sed incidunt quisquam labore expedita?
-                        Modi a harum deleniti cumque quisquam ipsa est facilis autem!
-                        </p>
-
-                        <div className="card-price">
-
-                            <p>R$ 900.000,00</p>
+                            </div>
 
                         </div>
 
                     </div>
-
-                </div>
-
-                <div className="card">
-
-                    <img src="./assets/img/thumb3.png" alt="Casa 3" />
-
-                    <div className="card-content">
-
-                        <h4>Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.</h4>
-
-                        <p>Perferendis enim animi molestias vero quas
-                        vel sed incidunt quisquam labore expedita?
-                        Modi a harum deleniti cumque quisquam ipsa est facilis autem!
-                        </p>
-
-                        <div className="card-price">
-
-                            <p>R$ 900.000,00</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div className="card">
-
-                    <img src="./assets/img/thumb4.png" alt="Casa 4" />
-
-                    <div className="card-content">
-
-                        <h4>Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.</h4>
-
-                        <p>Perferendis enim animi molestias vero quas
-                        vel sed incidunt quisquam labore expedita?
-                        Modi a harum deleniti cumque quisquam ipsa est facilis autem!
-                        </p>
-
-                        <div className="card-price">
-
-                            <p>R$ 900.000,00</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div className="card">
-
-                    <img src="./assets/img/thumb5.png" alt="Casa 5" />
-
-                    <div className="card-content">
-
-                        <h4>Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.</h4>
-
-                        <p>Perferendis enim animi molestias vero quas
-                        vel sed incidunt quisquam labore expedita?
-                        Modi a harum deleniti cumque quisquam ipsa est facilis autem!
-                        </p>
-
-                        <div className="card-price">
-
-                            <p>R$ 900.000,00</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div className="card">
-
-                    <img src="./assets/img/thumb6.png" alt="Casa 6" />
-
-                    <div className="card-content">
-
-                        <h4>Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.</h4>
-
-                        <p>Perferendis enim animi molestias vero quas
-                        vel sed incidunt quisquam labore expedita?
-                        Modi a harum deleniti cumque quisquam ipsa est facilis autem!
-                        </p>
-
-                        <div className="card-price">
-
-                            <p>R$ 900.000,00</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                    
+                ))}
 
             </div>
 
