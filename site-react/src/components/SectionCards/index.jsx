@@ -1,6 +1,11 @@
+import { IntlProvider, FormattedNumber } from 'react-intl';
+import { useImovel } from '../../hook/uselmovel';
+
 import './style.css';
 
 export function SectionCards() {
+
+    const { imoveis } = useImovel();
 
     return (
         <section id="cards">
@@ -42,7 +47,7 @@ export function SectionCards() {
                         </div>
 
                     </div>
-                    
+
                 ))}
 
             </div>
