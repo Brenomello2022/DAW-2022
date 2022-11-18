@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createContext, useState } from "react";
 
 const dados = [
@@ -76,11 +77,45 @@ const dados = [
 export const ImovelContext = createContext();
 
 export function ImovelContextProvider(props) {
-    
+
     const [imoveis, setImoveis] = useState(dados);
 
+    const [paramFilter, setParamFilter] = useState({});
+
+    useEffect(() => {
+
+        let dadosFiltrados = dados;
+
+        if (paramFilter.operacao) {
+
+            dadosFiltrados = dadosFiltrados.filter(item => item.operacao === paramFilter.operacao) 
+
+        }
+
+        if (paramFilter.tipo) {
+
+            dadosFiltrados = dadosFiltrados.filter(item => item.tipo === paramFilter.tipo) 
+
+        }
+
+        if (paramFilter.cidade) {
+
+            dadosFiltrados = dadosFiltrados.filter(item => item.cidade === paramFilter.cidade) 
+
+        }
+
+        if (paramFilter.bairro) {
+
+            dadosFiltrados = dadosFiltrados.filter(item => item.bairro === paramFilter.bairro) 
+            
+        }
+
+        setImoveis(dadosFiltrados)
+
+    }, [ paramFilter ]);
+
     return (
-        <ImovelContext.Provider value={{imoveis}}>
+        <ImovelContext.Provider value={{imoveis, setParamFilter}}>
             {props.children}
         </ImovelContext.Provider>
     )

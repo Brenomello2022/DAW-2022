@@ -3,6 +3,7 @@ import { SectionCards } from '../../components/SectionCards';
 import { SectionSpecialists } from '../../components/SectionSpecialists';
 import { SectionReasons } from '../../components/SectionReasons';
 import { SectionValues } from '../../components/SectionValues';
+import { ImovelContextProvider } from '../../context/ImovelContext';
 
 export function HomePage() {
     return (
@@ -10,9 +11,12 @@ export function HomePage() {
 
             <div className="container">
 
-                <SectionBanner />
+                <ImovelContextProvider>
+                    <SectionBanner />
 
-                <SectionCards />
+                    <SectionCards />
+                </ImovelContextProvider>
+
 
                 <SectionReasons />
 
@@ -21,7 +25,7 @@ export function HomePage() {
                 <SectionValues />
 
             </div>
-        
+
         </div>
     )
 }
