@@ -1,0 +1,55 @@
+header {
+    padding: 20px 20px 0 20px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+header .brand img {
+    width: 40px;
+    border-radius: 30px;
+}
+
+header .brand h6 {
+    font-size: 24px;
+    color: #0d95e4;
+    font-weight: 400;
+    line-height: 30px;
+    border-bottom: 1px #0d95e4;
+}
+
+header .header-navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: hidden;
+    border-radius: 12px;
+    gap: 4px;
+}
+  
+header .header-navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+header .header-navbar a:hover {
+    background-color: #000;
+}
+  
+header .active {
+    background-color: #04AA6D;
+}
