@@ -1,1 +1,1 @@
-Atividade Bimestral 2, React Js 2022
+Atividade Bimestral 2, criando pagina web, usando JavaScript React.

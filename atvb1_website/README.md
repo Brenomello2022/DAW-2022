@@ -1,1 +1,1 @@
-Atividade Bimestral 1, criando pagina web, usando HTML e CSS 2022.
+Atividade Bimestral 1, criando pagina web, usando HTML e CSS.

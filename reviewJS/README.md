@@ -1,1 +1,1 @@
-Exemplos de Js.
+Exemplos de JavaScript.
