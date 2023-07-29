@@ -1,1 +1,1 @@
-Site JavaScript React feito em sala 2022
+Site usando JavaScript React feito em sala 2022
